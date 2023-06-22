@@ -1,0 +1,12 @@
+int findSmallestPosition(int list[], int startPosition, int listLenghth)
+{
+    int smallestPosition = startPosition;
+    
+    for(int i = startPosition; i < listLenghth; i++)
+    {
+        if(list[i] < list[smallestPosition])
+                smallestPosition = i;
+        
+    }
+    return smallestPosition;
+}
